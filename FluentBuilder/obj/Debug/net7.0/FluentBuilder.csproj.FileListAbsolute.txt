@@ -1,0 +1,15 @@
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/FluentBuilder/bin/Debug/net7.0/FluentBuilder
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/FluentBuilder/bin/Debug/net7.0/FluentBuilder.deps.json
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/FluentBuilder/bin/Debug/net7.0/FluentBuilder.runtimeconfig.json
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/FluentBuilder/bin/Debug/net7.0/FluentBuilder.dll
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/FluentBuilder/bin/Debug/net7.0/FluentBuilder.pdb
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/FluentBuilder/obj/Debug/net7.0/FluentBuilder.csproj.AssemblyReference.cache
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/FluentBuilder/obj/Debug/net7.0/FluentBuilder.GeneratedMSBuildEditorConfig.editorconfig
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/FluentBuilder/obj/Debug/net7.0/FluentBuilder.AssemblyInfoInputs.cache
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/FluentBuilder/obj/Debug/net7.0/FluentBuilder.AssemblyInfo.cs
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/FluentBuilder/obj/Debug/net7.0/FluentBuilder.csproj.CoreCompileInputs.cache
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/FluentBuilder/obj/Debug/net7.0/FluentBuilder.dll
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/FluentBuilder/obj/Debug/net7.0/refint/FluentBuilder.dll
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/FluentBuilder/obj/Debug/net7.0/FluentBuilder.pdb
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/FluentBuilder/obj/Debug/net7.0/FluentBuilder.genruntimeconfig.cache
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/FluentBuilder/obj/Debug/net7.0/ref/FluentBuilder.dll

@@ -1,0 +1,15 @@
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/DessignPattern.Builder/bin/Debug/net7.0/DessignPattern.Builder
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/DessignPattern.Builder/bin/Debug/net7.0/DessignPattern.Builder.deps.json
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/DessignPattern.Builder/bin/Debug/net7.0/DessignPattern.Builder.runtimeconfig.json
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/DessignPattern.Builder/bin/Debug/net7.0/DessignPattern.Builder.dll
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/DessignPattern.Builder/bin/Debug/net7.0/DessignPattern.Builder.pdb
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/DessignPattern.Builder/obj/Debug/net7.0/DessignPattern.Builder.csproj.AssemblyReference.cache
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/DessignPattern.Builder/obj/Debug/net7.0/DessignPattern.Builder.GeneratedMSBuildEditorConfig.editorconfig
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/DessignPattern.Builder/obj/Debug/net7.0/DessignPattern.Builder.AssemblyInfoInputs.cache
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/DessignPattern.Builder/obj/Debug/net7.0/DessignPattern.Builder.AssemblyInfo.cs
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/DessignPattern.Builder/obj/Debug/net7.0/DessignPattern.Builder.csproj.CoreCompileInputs.cache
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/DessignPattern.Builder/obj/Debug/net7.0/DessignPattern.Builder.dll
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/DessignPattern.Builder/obj/Debug/net7.0/refint/DessignPattern.Builder.dll
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/DessignPattern.Builder/obj/Debug/net7.0/DessignPattern.Builder.pdb
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/DessignPattern.Builder/obj/Debug/net7.0/DessignPattern.Builder.genruntimeconfig.cache
+/Users/serkan.yurttapan/RiderProjects/DessignPattern.Builder/DessignPattern.Builder/DessignPattern.Builder/obj/Debug/net7.0/ref/DessignPattern.Builder.dll
