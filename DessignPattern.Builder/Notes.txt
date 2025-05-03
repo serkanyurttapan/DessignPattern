@@ -1,0 +1,165 @@
+ 3 önemli builder pattern türü ve açıklamaları (kodlarıyla beraber)
+ 
+ 1-Fluent Builder
+ 
+ -Zincirleme (chaning) metod çağrıları yapılır
+ -Her metod builder'in kendisini döner (this)
+ -Kullanımı kolay ve okunabilirdir
+ 
+ Sınıf örneği
+ 
+ 
+ public class FluentPersonBuilder {
+ 
+ private readonly Person person =new();
+ 
+ public FluentPersonBuilder WithName(string name) 
+ {
+   person.Name =name;
+   return this;
+ }
+ 
+ public FluentPersonBuilder WithAge(int age
+ {
+  person.Age =age;
+  return this;
+ }
+ public Person Build() {
+   return person;
+ }
+ 
+ var person = FluentPersonBuilder().WithName("serkan").WithAge(11).Build();
+ 
+ 
+ 
+ 
+ -------- -------- -------- -------- -------- -------- -------- -------- --------
+ 
+ 
+ 2- Functional Builder:
+ 
+ - Adımlar Action<T> veya Func<T,T> gibi delegate'lerle tanımlanır.
+ - Adımlar bir listeye eklenir, Build çağrıldığında uygulanır.
+ 
+ Sınıf Örneği
+ 
+ public class FunctionalPersonBuilder 
+ {
+   private readonly List<Action<Person>> actions = new();
+   public FunctionalPersonBuilder Do(Action<Person> action) {
+   
+     actions.Add(action);
+     return this;
+ }
+ public Person Build() 
+ {
+   var person =new Person();
+   actions.Foreach(a=>a(person));
+   return person;
+  }
+}
+
+Kullanımı 
+var person = new FunctionalPersonBuilder().Do(p=>p.Name ="Ayşe").Do(p=>p.Age=25).Build();
+  
+ Stepwise Builder:
+    - Her adım farklı bir interface döner.
+    - Yalnızca doğru sırayla çağrı yapılmasına izin verir.
+    - Compile-time güvenliği sağlar.
+    
+    
+    
+     Örnek:
+         var person = PersonBuilder.Create()
+             .WithName("Zeynep")
+             .WithAge(28)
+             .Build();
+    
+       Avantajları:
+         - Zorunlu alanların unutulmasını engeller
+         - Derleme zamanında hata verir (eksik adım varsa)
+         - Özellikle zorunlu kurallar içeren konfigürasyonlar için ideal
+    */
+    
+    public class Person
+    {
+        public string Name;
+        public int Age;
+    }
+    
+    // Adım Arayüzleri
+    // Builder zincirinin ilk adımını tanımlar
+    public interface INameStep
+    {
+        // İsim ayarlandıktan sonra yaş adımına geçilir
+        IAgeStep WithName(string name);
+    }
+    
+    // Builder zincirinin ikinci adımı
+    public interface IAgeStep
+    {
+        // Yaş ayarlandıktan sonra son adım olan Build çağrılır
+        IBuildStep WithAge(int age);
+    }
+    
+    // Son adım: Person nesnesinin oluşturulmasına izin verir
+    public interface IBuildStep
+    {
+        Person Build();
+    }
+    
+    // Tüm adımları uygulayan somut builder sınıfı
+    public class PersonBuilder : INameStep, IAgeStep, IBuildStep
+    {
+        private readonly Person person = new();
+    
+        // Builder zincirini başlatan statik metod
+        public static INameStep Create() => new PersonBuilder();
+    
+        // INameStep uygulaması: ismi ayarlar, yaş adımına geçer
+        public IAgeStep WithName(string name)
+        {
+            person.Name = name;
+            return this;
+        }
+    
+        // IAgeStep uygulaması: yaşı ayarlar, build adımına geçer
+        public IBuildStep WithAge(int age)
+        {
+            person.Age = age;
+            return this;
+        }
+    
+        // IBuildStep uygulaması: finalde Person nesnesini döner
+        public Person Build() => person;
+    }
+    
+    // Kullanım Örneği
+    public class Program
+    {
+        public static void Main()
+        {
+            // Zorunlu sırayla builder kullanımı: Name -> Age -> Build
+            var person = PersonBuilder.Create()
+                .WithName("Serkan")
+                .WithAge(34)
+                .Build();
+    
+            Console.WriteLine($"{person.Name}, {person.Age}");
+        }
+    }
+    
+    /*
+    Çıktı:
+    Serkan, 34
+    
+    Notlar:
+    - Stepwise Builder, metotların belirli sırayla çağrılmasını garanti eder.
+    - Her adım, sadece geçerli olan bir sonraki arayüzü döndürür.
+    - Yanlış kullanım ya da eksik veri (örneğin yaş verilmeden Build çağırmak) derleme zamanında engellenir.
+    - API ya da yapılandırma nesnelerinde sıralı veri girilmesi gereken durumlar için idealdir.
+    - Derleme zamanında güvenlik (compile-time safety) ve daha okunabilir kod sağlar.
+    */
+
+    
+    
