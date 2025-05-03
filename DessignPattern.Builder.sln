@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentBuilder", "FluentBuil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StepwiseBuilder", "StepwiseBuilder\StepwiseBuilder.csproj", "{1B928137-6000-4BA5-A655-4063D27E355A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalBuilder", "FunctionalBuilder\FunctionalBuilder.csproj", "{71D42C39-54E2-4D21-BA51-503D149949DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{1B928137-6000-4BA5-A655-4063D27E355A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B928137-6000-4BA5-A655-4063D27E355A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B928137-6000-4BA5-A655-4063D27E355A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71D42C39-54E2-4D21-BA51-503D149949DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71D42C39-54E2-4D21-BA51-503D149949DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71D42C39-54E2-4D21-BA51-503D149949DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71D42C39-54E2-4D21-BA51-503D149949DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
